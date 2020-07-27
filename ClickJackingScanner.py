@@ -114,7 +114,7 @@ try:
 	while(True or count!=len(listfinal)):
 		print("Total count {}/{}".format(count,len(listfinal)))
 		time.sleep(2)
-	print("Total Clickjacking vulnerable site are = {}".format(count))
+	print("Total Clickjacking vulnerable site are = {}".format(vulncount))
 	print("[*] Wait for a while to save the output file")
 	for i in listoutput:
 		fileo.write(i)
@@ -122,7 +122,7 @@ try:
 	print("---Good Bye---")
 	raise SystemExit
 except KeyboardInterrupt:
-	print("Total Clickjacking vulnerable site are = {}".format(count))
+	print("Total Clickjacking vulnerable site are = {}".format(vulncount))
 	print("[*] Wait for a while to save the output file")
 	for i in listoutput:
 		fileo.write(i)
