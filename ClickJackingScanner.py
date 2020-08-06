@@ -78,7 +78,6 @@ def checkcj(url):
 				print("[*] ClickJacking found on {}".format(url))
 				count=count+1
 				vulncount=vulncount+1
-				fileo.write(url)
 
 	except:
 		count=count+1
