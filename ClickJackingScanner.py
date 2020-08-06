@@ -75,7 +75,6 @@ def checkcj(url):
 			headers=data.info()
 			if not "X-Frame-Options" in headers:
 				listoutput.append(url)
-				fileo.write(url)
 				print("[*] ClickJacking found on {}".format(url))
 				count=count+1
 				vulncount=vulncount+1
