@@ -95,11 +95,11 @@ for i in range(0,len(listfinal)):
 		thread.append(t1)
 		t1.start()
 	else:
-		temp1="https://"+url
+		temp1="https://"+temp
 		t1=threading.Thread(target=checkcj,args=(temp1,))
 		thread.append(t1)
 		t1.start()
-		temp1="https://"+url
+		temp1="https://"+temp
 		t2=threading.Thread(target=checkcj,args=(temp1,))
 		thread.append(t2)
 		t2.start()
